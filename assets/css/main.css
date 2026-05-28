@@ -2622,71 +2622,48 @@ html {
     margin: 0 auto;
 }
 
-/* Mobile Layout Fix */
-
-@media screen and (max-width: 736px) {
-
-    #top .col-4,
-    #top .col-8 {
-        width: 100%;
-        text-align: center;
-    }
-
-    .profile-box img {
-        max-width: 220px;
-        margin-bottom: 2rem;
-    }
-
-    #top h1 {
-        font-size: 2rem;
-    }
-}
-
-
-/* ===== MOBILE HERO FIX ===== */
+/* ===== MOBILE HERO SIDE-BY-SIDE FIX ===== */
 
 @media screen and (max-width: 736px) {
 
     #top .row {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-    }
-
-    #top .col-4,
-    #top .col-8,
-    #top .col-5-large,
-    #top .col-7-large,
-    #top .col-12-medium {
-        width: 100% !important;
-        max-width: 100% !important;
-        text-align: center;
-    }
-
-    .profile-box {
-        display: flex;
         justify-content: center;
-        margin-bottom: 2rem;
+        gap: 1rem;
+        flex-wrap: nowrap;
+        padding: 1rem;
+    }
+
+    #top .col-4 {
+        width: 40% !important;
+    }
+
+    #top .col-8 {
+        width: 60% !important;
     }
 
     .profile-box img {
-        width: 220px !important;
-        height: 220px !important;
+        width: 140px;
+        height: 140px;
         object-fit: cover;
-        border-radius: 20px !important;
+        border-radius: 16px !important;
     }
 
     #top h1 {
-        font-size: 2rem;
-        line-height: 1.3;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-bottom: 0.5rem;
     }
 
     #top p {
-        font-size: 1rem;
-        padding: 0 1rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 
     #top .button {
-        margin-top: 1rem;
+        font-size: 0.8rem;
+        padding: 0.7rem 1rem;
     }
 }
