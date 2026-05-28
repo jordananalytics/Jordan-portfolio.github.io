@@ -2622,12 +2622,17 @@ html {
     margin: 0 auto;
 }
 
-/* ===== MOBILE HORIZONTAL HERO SCROLL ===== */
+/* ===== MOBILE HORIZONTAL HERO FIX ===== */
 
 @media screen and (max-width: 736px) {
 
-    #top .container {
+    #top {
         overflow-x: auto;
+    }
+
+    #top .container {
+        width: max-content;
+        min-width: 700px;
     }
 
     #top .row {
@@ -2635,16 +2640,17 @@ html {
         flex-wrap: nowrap;
         align-items: center;
         gap: 2rem;
-        min-width: 700px;
         padding: 1rem;
     }
 
     #top .col-4 {
-        flex: 0 0 250px;
+        width: 250px !important;
+        flex-shrink: 0;
     }
 
     #top .col-8 {
-        flex: 0 0 400px;
+        width: 400px !important;
+        flex-shrink: 0;
     }
 
     .profile-box img {
