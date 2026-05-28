@@ -2622,49 +2622,29 @@ html {
     margin: 0 auto;
 }
 
-/* ===== MOBILE HORIZONTAL HERO FIX ===== */
-
 @media screen and (max-width: 736px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-    }
-
     #top {
-        overflow-x: auto;
-        overflow-y: visible;
-        -webkit-overflow-scrolling: touch;
-        padding: 2rem 0;
+        text-align: center;
+        padding: 3rem 1.25rem;
     }
 
     #top .container {
-        width: 720px;
-        max-width: none;
-        min-width: 720px;
+        width: 100%;
+        max-width: 100%;
     }
 
     #top .row {
-        display: flex !important;
-        flex-wrap: nowrap !important;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        gap: 2rem;
-        margin: 0;
-        padding: 1rem;
+        gap: 1.5rem;
     }
 
     #top .col-4,
     #top .col-8 {
-        float: none !important;
-        flex: 0 0 auto !important;
-    }
-
-    #top .col-4 {
-        width: 250px !important;
-    }
-
-    #top .col-8 {
-        width: 420px !important;
+        width: 100% !important;
+        max-width: 100%;
     }
 
     .profile-box img {
@@ -2672,18 +2652,23 @@ html {
         height: 220px;
         object-fit: cover;
         border-radius: 20px !important;
-        display: block;
     }
 
     #top h1 {
         font-size: 2rem;
-        line-height: 1.3;
-        white-space: normal;
+        line-height: 1.25;
+        margin-bottom: 1rem;
     }
 
     #top p {
         font-size: 1rem;
         line-height: 1.6;
-        white-space: normal;
+        margin-bottom: 1.5rem;
+    }
+
+    #top .button {
+        width: 100%;
+        max-width: 280px;
+        text-align: center;
     }
 }
