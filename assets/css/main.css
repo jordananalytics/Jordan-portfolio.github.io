@@ -2626,31 +2626,45 @@ html {
 
 @media screen and (max-width: 736px) {
 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     #top {
         overflow-x: auto;
+        overflow-y: visible;
+        -webkit-overflow-scrolling: touch;
+        padding: 2rem 0;
     }
 
     #top .container {
-        width: max-content;
-        min-width: 700px;
+        width: 720px;
+        max-width: none;
+        min-width: 720px;
     }
 
     #top .row {
-        display: flex;
-        flex-wrap: nowrap;
+        display: flex !important;
+        flex-wrap: nowrap !important;
         align-items: center;
         gap: 2rem;
+        margin: 0;
         padding: 1rem;
+    }
+
+    #top .col-4,
+    #top .col-8 {
+        float: none !important;
+        flex: 0 0 auto !important;
     }
 
     #top .col-4 {
         width: 250px !important;
-        flex-shrink: 0;
     }
 
     #top .col-8 {
-        width: 400px !important;
-        flex-shrink: 0;
+        width: 420px !important;
     }
 
     .profile-box img {
@@ -2658,15 +2672,18 @@ html {
         height: 220px;
         object-fit: cover;
         border-radius: 20px !important;
+        display: block;
     }
 
     #top h1 {
         font-size: 2rem;
         line-height: 1.3;
+        white-space: normal;
     }
 
     #top p {
         font-size: 1rem;
         line-height: 1.6;
+        white-space: normal;
     }
 }
