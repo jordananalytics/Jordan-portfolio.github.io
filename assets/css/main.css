@@ -2609,3 +2609,35 @@ html {
 .profile-box img:hover {
     transform: scale(1.03);
 }
+
+
+
+/* Profile Image Mobile Fix */
+
+.profile-box img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Mobile Layout Fix */
+
+@media screen and (max-width: 736px) {
+
+    #top .col-4,
+    #top .col-8 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile-box img {
+        max-width: 220px;
+        margin-bottom: 2rem;
+    }
+
+    #top h1 {
+        font-size: 2rem;
+    }
+}
