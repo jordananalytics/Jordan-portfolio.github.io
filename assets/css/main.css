@@ -2698,33 +2698,57 @@ html {
 .modern-social {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 12px;
   flex-wrap: wrap;
-  gap: 14px;
-  padding-left: 0;
-  margin-top: 25px;
+  padding: 0;
+  margin: 24px 0 0 0;
 }
 
 .modern-social li {
   list-style: none;
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .modern-social .social-btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  min-width: 145px;
   justify-content: center;
-  padding: 13px 20px;
+  min-width: 120px;
+  height: 44px;
+  padding: 0 18px;
   border-radius: 8px;
-  color: #fff !important;
+  color: #ffffff !important;
   text-decoration: none;
   font-weight: 700;
-  font-size: 0.95em;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 15px;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: none;
 }
 
+.modern-social .social-btn:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+  filter: brightness(1.08);
+}
+
+.modern-social .x-btn {
+  background: #111111;
+}
+
+.modern-social .linkedin-btn {
+  background: #0a66c2;
+}
+
+.modern-social .whatsapp-btn {
+  background: #1fa855;
+}
+
+.modern-social .email-btn {
+  background: #e44c65;
+}
 .modern-social .social-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
