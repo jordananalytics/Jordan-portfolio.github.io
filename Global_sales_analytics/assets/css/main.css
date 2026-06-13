@@ -3105,6 +3105,50 @@ input, select, textarea {
 
 
 
+.highlights-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.highlights-list > li {
+  list-style: none !important;
+}
+
+
+
+
+
+.mobile-break {
+  display: none;
+}
+
+@media screen and (max-width: 736px) {
+  .mobile-break {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
