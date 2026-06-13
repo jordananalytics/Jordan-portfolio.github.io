@@ -3076,7 +3076,7 @@ input, select, textarea {
 
 @media screen and (max-width: 736px) {
   #content header h2 {
-    font-size: 1.35em;
+    font-size: 1.15em;
     line-height: 1.35;
     letter-spacing: 0.08em;
     text-align: center;
