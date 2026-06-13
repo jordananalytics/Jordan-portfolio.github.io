@@ -3065,3 +3065,25 @@ input, select, textarea {
 	background: none !important;
 	box-shadow: none !important;
 }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 736px) {
+  #content header h2 {
+    font-size: 1.35em;
+    line-height: 1.35;
+    letter-spacing: 0.08em;
+    text-align: center;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+}
+
+
+
