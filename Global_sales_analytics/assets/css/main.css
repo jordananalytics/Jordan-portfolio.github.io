@@ -3276,7 +3276,17 @@ input, select, textarea {
 
 
 
+/* Phone horizontal scroll fix */
+@media screen and (max-width: 980px) {
+    html,
+    body {
+        overflow-x: auto;
+    }
 
+    #page-wrapper {
+        min-width: 900px;
+    }
+}
 
 
 
