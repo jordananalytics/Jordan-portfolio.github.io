@@ -3247,19 +3247,30 @@ input, select, textarea {
 
 
 
-
-
-/* Full-width double divider inside main content row */
-.content-cross-line {
-    border-top: 1px solid #e5e5e5;
-    border-bottom: 1px solid #e5e5e5;
-    height: 7px;
-
-    width: calc(100% + 65%);
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
+/* Wide lower content on desktop */
+.wide-after-line {
+    width: calc(100% + 50%);
+    max-width: none;
 }
 
+/* Keep phone layout normal */
+@media screen and (max-width: 980px) {
+    .wide-after-line {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .content-cross-line {
+        width: 100%;
+    }
+
+    #sidebar {
+        display: block;
+        width: 100%;
+        clear: both;
+        margin-top: 2em;
+    }
+}
 
 
 
