@@ -190,9 +190,9 @@ input, select, textarea {
 	}
 
 	p {
-		text-align: justify;
-		margin-bottom: 2em;
-	}
+    text-align: left;
+    margin-bottom: 2em;
+}
 
 	ul, ol, dl, table, blockquote {
 		margin-bottom: 2em;
@@ -1934,7 +1934,7 @@ input, select, textarea {
 			margin: 2.5em 0 0 0;
 			font-size: 0.85em;
 			letter-spacing: 3px;
-			text-align: center;
+			text-align: left;
 		}
 
 /* Nav */
@@ -2605,7 +2605,7 @@ input, select, textarea {
 		/* Box */
 
 			.box.excerpt header {
-				text-align: center;
+				text-align: left;
 			}
 
 		/* Header */
@@ -2722,7 +2722,7 @@ input, select, textarea {
 
 
 .highlight-title {
-    text-align: center;
+    text-align: left;
 }
 
 .highlight-title h3 {
@@ -2756,7 +2756,7 @@ input, select, textarea {
 
 
 .highlight-title {
-    text-align: center;
+    text-align: left;
 }
 
 .highlight-title h3 {
@@ -2766,7 +2766,7 @@ input, select, textarea {
 
 .highlight-images-row {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: flex-start;
     gap: 3em;
     margin: 2em auto;
@@ -2795,9 +2795,8 @@ input, select, textarea {
 }
 
 .highlight-title h3 {
-    white-space: nowrap;
+    white-space: normal;
 }
-
 
 
 
@@ -3103,12 +3102,12 @@ input, select, textarea {
   .highlight-title h3 {
     font-size: 1.35em;
     letter-spacing: 0.08em;
-    text-align: center;
+    text-align: left;
   }
 
   #content h2 {
     font-size: 1.4em;
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -3177,25 +3176,6 @@ input, select, textarea {
 
 
 
-/* Desktop: allow lower text to use more horizontal space */
-.wide-after-line {
-    width: calc(100% + 50%);
-    max-width: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -3214,6 +3194,91 @@ input, select, textarea {
 
 
 
+
+
+
+
+/* Full-width double divider inside main content row */
+.content-cross-line {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    height: 7px;
+
+    width: calc(100% + 65%);
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+
+
+
+
+
+
+/* Align all content to the left */
+#content,
+#content p,
+#content h2,
+#content h3,
+#content ul,
+#content li,
+#content article,
+.box,
+.box header {
+    text-align: left !important;
+}
+
+
+
+
+
+
+/* Force all text inside the main content area to the left */
+#content * {
+    text-align: left !important;
+}
+
+
+
+
+
+
+
+
+#content,
+#content article,
+#content header,
+#content h2,
+#content h3,
+#content p,
+#content ul,
+#content li {
+    text-align: left !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Force all dashboard content left aligned */
+
+#content,
+#content header,
+#content h2,
+#content h3,
+#content p,
+#content ul,
+#content li,
+.box.post > header,
+.no-sidebar .box.post > header {
+    text-align: left !important;
+}
 
 
 
@@ -3252,9 +3317,6 @@ input, select, textarea {
 
 
 
-
-
-
 .wide-after-line {
     width: 100%;
     max-width: 100%;
@@ -3267,4 +3329,3 @@ input, select, textarea {
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
-
