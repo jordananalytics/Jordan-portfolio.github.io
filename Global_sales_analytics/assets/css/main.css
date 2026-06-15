@@ -3222,6 +3222,22 @@ input, select, textarea {
 
 
 
+@media screen and (max-width: 768px) {
 
+    .wide-after-line {
+        width: 100%;
+        max-width: 100%;
+        overflow: visible;
+    }
+
+    .wide-after-line p,
+    .wide-after-line li,
+    .wide-after-line h3 {
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+    }
+
+}
 
 
