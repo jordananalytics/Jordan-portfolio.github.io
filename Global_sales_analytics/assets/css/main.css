@@ -3344,3 +3344,20 @@ input, select, textarea {
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
+
+
+
+
+
+
+@media screen and (max-width: 980px) {
+
+    #main {
+        padding-top: 4em;
+    }
+
+}
+
+
+
+
