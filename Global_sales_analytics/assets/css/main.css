@@ -3329,3 +3329,18 @@ input, select, textarea {
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
+
+
+
+
+
+
+
+
+
+#content h2,
+#content h3 {
+    white-space: normal !important;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
