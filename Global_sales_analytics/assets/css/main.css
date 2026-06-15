@@ -3241,3 +3241,30 @@ input, select, textarea {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wide-after-line {
+    width: 100%;
+    max-width: 100%;
+}
+
+.wide-after-line h3,
+.wide-after-line p,
+.wide-after-line li {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
